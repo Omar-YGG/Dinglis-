@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+#contenedor {
+    position: relative;
+    min-height: 100vh;
+}
+
+section {
+    height: 80%;
+    width: 50%;
+    float: left;
+}
+
+#patron1 {
+    margin: 10%;
+    width: 630px;
+    height: 340px;
+    background: repeating-linear-gradient( -45deg, #dadada, #dadada 4px, #ffffff 4px, #ffffff 20px );
+    z-index: -2;
+    margin-bottom: 2%;
+}
+
+#patron2 {
+    margin: 10%;
+    width: 630px;
+    height: 340px;
+
+    z-index: -2;
+    margin-bottom: 2%;
+
+    background-color: white;
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #dadada 25%, transparent 25%), linear-gradient(225deg, #dadada 25%, transparent 25%), linear-gradient(45deg, #dadada 25%, transparent 25%), linear-gradient(315deg, #dadada 25%, white 25%);
+    background-position:  16px 0, 16px 0, 0 0, 0 0;
+    background-size: 16px 16px;
+    background-repeat: repeat;
+}
+
+.titulo {
+    text-align: center;
+    padding-left: 10%;
+    font-family: 'Roboto Mono', monospace;
+    color: #0d0505;
+    display: inline-block;
+    z-index: 1;
+    font-size: 120px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    opacity: 0.9;
+}
+
+
+.imagen {
+    width: 1000px;
+    margin-left: -100;
+}
+
+#parrafo {
+    color: #0d0505	;
+    font-family: 'Space Mono', monospace;
+    font-size: 25px;
+    opacity: 0.9;
+
+}
+
+.bloque {
+    margin-left: 10%;
+    width: 630px;
+    height: 150px;
+}
+
+.boton {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    background-color: rgb(255, 109, 109);
+    border-style: none;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: 10px;
+    box-shadow:inset 0px 1px 0px 0px rgb(255, 109, 109);
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:6px 24px;
+	text-decoration:none;
+}
+
+.boton:hover {
+	background-color:#f54949;
+}
+.boton:active {
+	position:relative;
+	top:1px;
+}
+
+#seccion-abajo {
+    box-shadow: 0px 0px 50px 1px rgb(0, 0, 0, 0.288)
+}
